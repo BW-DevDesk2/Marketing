@@ -1,0 +1,46 @@
+.indexMid{
+    width: 80%;
+    margin: 0 auto;
+
+    .educationMid, .learningMid{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 3px solid @brownColor;
+        padding: 1%;
+        background: @beigeColor;
+        &:hover{
+            background: lighten(@beigeColor, 4%);
+            h2{
+                font-weight: bold;
+            }
+        }
+    }
+    .communicateMid{
+        border: 3px solid @brownColor;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 1%;
+        background: @beigeColor;
+        &:hover{
+            background: lighten(@beigeColor, 4%);
+            h2{
+                font-weight: bold;
+            }
+        }
+    }
+    .midText{
+        text-align: center;
+        margin: 2%;
+        letter-spacing: 0.15rem;
+        p{
+            margin-top: 4%;
+            letter-spacing: 0;
+            line-height: 2rem;
+        }
+    }
+    
+}
