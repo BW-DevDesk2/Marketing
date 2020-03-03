@@ -138,6 +138,9 @@ h1 {
 h2 {
   font-size: 2.5rem;
 }
+h3 {
+  font-size: 2rem;
+}
 img {
   width: 50%;
 }
@@ -147,6 +150,10 @@ header {
   flex-direction: column;
   text-align: center;
   border-bottom: 3px solid #9f7e69;
+}
+header a {
+  text-decoration: none;
+  color: black;
 }
 header nav {
   margin: 3%;
@@ -246,4 +253,36 @@ footer #bottomLine {
 }
 .indexMid img {
   border-radius: 10px;
+}
+.aboutMid {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMid .midRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.aboutMid .midRow .teamBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-top: 2%;
+  border: 3px solid #9f7e69;
+  padding: 2% 0 2% 0;
+  background: #f2efc7;
+  border-radius: 10px;
+}
+.aboutMid .midRow .teamBox:hover {
+  background: #f6f4d8;
+}
+.aboutMid .midRow .teamBox:hover h3 {
+  font-weight: bold;
+}
+.aboutMid .midRow .teamBox img {
+  border-radius: 10px;
+}
+.aboutMid .midRow .teamBox h3 {
+  margin-top: 2%;
 }
