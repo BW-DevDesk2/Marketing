@@ -7,6 +7,9 @@ body{
     background: @lightestColor;
     border: 10px solid @brownColor;
     border-radius: 20px;
+    @media @mobile{
+        width: 95%;
+    }
 }
 h1{
     font-size: 5rem;
@@ -21,4 +24,7 @@ h3{
 
 img{
     width: 50%;
+    @media @mobile{
+        width: 90%;
+    }
 }

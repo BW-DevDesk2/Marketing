@@ -11,6 +11,10 @@ header{
         margin: 3%;
         a{
             .createNavButton();
+            @media @mobile{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
     border-bottom: 3px solid @brownColor;

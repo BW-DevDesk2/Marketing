@@ -1,6 +1,9 @@
 .indexMid{
     width: 80%;
     margin: 0 auto;
+    @media @mobile{
+        width: 100%;
+    }
 
     .educationMid, .learningMid{
         margin-top: 2%;
@@ -17,6 +20,9 @@
                 font-weight: bold;
             }
         }
+        @media @mobile{
+            flex-direction: column;
+        }
     }
     .communicateMid{
         border: 3px solid @brownColor;
@@ -32,6 +38,9 @@
             h2{
                 font-weight: bold;
             }
+        }
+        @media @mobile{
+            flex-direction: column;
         }
     }
     .midText{
