@@ -1,21 +1,38 @@
 header{
-    padding-top: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    @media @mobile{
+        flex-direction: column;
+    }
+    h1{
+        color: @redColor;
+    }
     a{
         text-decoration: none;
-        color: black;
     }
     nav{
-        margin: 3%;
+        display: flex;
+        justify-content: space-between;
+        margin: 3% 0;
+        width: 40%;
+        @media @mobile{
+            width: 90%;
+            align-items: center;
+            flex-direction: column;
+        }
         a{
             .createNavButton();
+            width: 20%;
             @media @mobile{
+                margin-top: 2%;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
             }
         }
     }
-    border-bottom: 3px solid @brownColor;
+    border-bottom: 3px solid @purpleColor;
 }

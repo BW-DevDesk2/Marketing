@@ -20,21 +20,33 @@
         align-items: center;
         width: 40%;
         margin-top: 2%;
-        border: 3px solid @brownColor;
+        border: 3px solid @purpleColor;
         padding: 2% 0 2% 0;
-        background: @beigeColor;
+        background: @lighterBlueColor;
         border-radius: 10px;
         &:hover{
-            background: lighten(@beigeColor, 4%);
             h3{
                 font-weight: bold;
             }
         }
         img{
             border-radius: 10px;
+            border: 3px solid @purpleColor;
         }
-        h3{
-            margin-top: 2%;
+        .teamText{
+            margin-top: 1%;
+            padding: 1%;
+            background: @whiteColor;
+            border: 3px solid @purpleColor;
+            border-radius: 10px;
+            text-align: center;
+            p{
+                margin-top: 2%;
+            }
+            a{
+                font-size: 2rem;
+                color: @purpleColor;
+            }
         }
         @media @mobile{
             width: 95%;
