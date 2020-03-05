@@ -7,6 +7,9 @@ header{
     @media @mobile{
         flex-direction: column;
     }
+    @media @tablet{
+        flex-direction: column;
+    }
     h1{
         color: @redColor;
     }
@@ -22,6 +25,9 @@ header{
             width: 90%;
             align-items: center;
             flex-direction: column;
+        }
+        @media @tablet{
+            width: 90%;
         }
         a{
             .createNavButton();
